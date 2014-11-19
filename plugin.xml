@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
+    id="com.burningfire.phonegap.urx"
+    version="0.1.0">
+    <name>URX</name>
+
+    <!-- ios -->
+    <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="URX">
+        <param name="ios-package" value="URX" />
+      </feature>
+    </config-file>
+    <header-file src="src/URX.h" />
+	  <source-file src="src/URX.m" />
+  </platform>
+</plugin>
