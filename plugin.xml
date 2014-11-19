@@ -13,5 +13,8 @@
     </config-file>
     <header-file src="src/URX.h" />
     <source-file src="src/URX.m" />
+    <framework src="frameworks/URXSearch.framework" />
+    <framework src="frameworks/URXWidgets.framework" />
+    <framework src="frameworks/URXWidgetsResources.framework" />
   </platform>
 </plugin>
