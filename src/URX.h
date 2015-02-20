@@ -1,8 +1,5 @@
 //
 //  URX.h
-//  One Day Gym Pass
-//
-//  Created by Nathaniel on 11/14/14.
 //
 //
 
