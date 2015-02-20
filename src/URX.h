@@ -9,5 +9,5 @@
 #import <Cordova/CDVPlugin.h>
 
 @interface URX : CDVPlugin
-- (void) searchSongify:(CDVInvokedUrlCommand *)command;
+- (void) searchSongs:(CDVInvokedUrlCommand *)command;
 @end
