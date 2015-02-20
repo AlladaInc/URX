@@ -13,7 +13,7 @@ UIWebView *webView;
     self = [super initWithWebView: theWebView];
     return self;
 }
-- (void) searchSongify: (CDVInvokedUrlCommand*)command{
+- (void) searchSongs: (CDVInvokedUrlCommand*)command{
     NSArray *arguments = command.arguments;
     NSString *callbackId = command.callbackId;
     CDVPluginResult *pluginResult = nil;
