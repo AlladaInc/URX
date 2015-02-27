@@ -1,10 +1,4 @@
-//
-//  URXSearchResponse.h
-//  URXSearch
-//
-//  Created by James Turner on 10/8/14.
 //  Copyright (c) 2014 URX. All rights reserved.
-//
 
 #import <Foundation/Foundation.h>
 #import "URXAPIError.h"
@@ -15,7 +9,7 @@
 @property (strong, nonatomic, readonly) NSArray *results;
 @property (strong, nonatomic, readonly) URXAPIError *error;
 
--(instancetype) initWithEntityData:(NSDictionary *)entityData;
+-(instancetype) initWithEntityData:(NSDictionary *)entityData andCorrelationId:(NSString *)correlationId;
 -(instancetype) initWithError:(URXAPIError *)error;
 
 @end

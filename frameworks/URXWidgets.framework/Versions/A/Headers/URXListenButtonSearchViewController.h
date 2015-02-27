@@ -4,6 +4,19 @@
 
 @interface URXListenButtonSearchViewController : UIViewController <UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource>
 
--(instancetype)initWithInitialQuery:(NSString *)initialQuery modalBarColor:(UIColor *)modalBarColor modalBarTitle:(NSString *)modalBarTitle modalBarTextColor:(UIColor *)modalBarTextColor backButtonText:(NSString *)backButtonText backButtonColor:(UIColor *)backButtonColor backButtonBoldText:(BOOL)backButtonBoldText andCallingViewController:(UIViewController *)callingViewController;
+@property (nonatomic, strong) IBOutlet UISearchBar *searchBar;
+@property (nonatomic, strong) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicatorView;
+@property (strong, nonatomic) IBOutlet UILabel *resultsLabel;
+
+@property (strong, nonatomic) NSString *lastQuery;
+@property (strong, nonatomic) UIViewController *callingViewController;
+@property (strong, nonatomic) UIColor *modalBarColor;
+@property (strong, nonatomic) NSString *modalBarTitle;
+@property (strong, nonatomic) UIColor *modalBarTextColor;
+@property (strong, nonatomic) NSString *backButtonText;
+@property (strong, nonatomic) UIColor *backButtonColor;
+@property (nonatomic) BOOL backButtonBoldText;
+@property (nonatomic, strong) UIColor *searchBarTextColor;
 
 @end

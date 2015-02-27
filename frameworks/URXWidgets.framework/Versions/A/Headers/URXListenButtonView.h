@@ -1,6 +1,6 @@
 //  Copyright (c) 2014 URX. All rights reserved.
 
-//#import "URXKeywordContext.h"
+#import "URXKeywordContext.h"
 
 IB_DESIGNABLE
 @interface URXListenButtonView : UIButton
@@ -12,7 +12,8 @@ IB_DESIGNABLE
 @property (nonatomic, strong) IBInspectable NSString *backButtonText;
 @property (nonatomic, strong) IBInspectable UIColor *backButtonColor;
 @property (nonatomic) IBInspectable BOOL backButtonBoldText;
+@property (nonatomic, strong) IBInspectable UIColor *searchBarTextColor;
 
-//@property (nonatomic, strong) IBOutlet id<URXKeywordContext>keywordContext;
+@property (nonatomic, strong) IBOutlet id<URXKeywordContext>keywordContext;
 
 @end
